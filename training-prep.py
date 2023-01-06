@@ -7,7 +7,7 @@ import tensorflow as tf
 
 #RATE = 44100
 
-file_contents = tf.io.read_file("audio.wav")
+file_contents = tf.io.read_file("data/count-to-20.wav")
 wav,sample_rate = tf.audio.decode_wav(file_contents,desired_channels=1)
 
 print("sample_rate",sample_rate)
